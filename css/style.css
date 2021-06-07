@@ -45,6 +45,10 @@ h3 {
 	font-size: 30px;
 }
 
+h3 i{
+	color: #f79f9f;
+}
+
 h4 {
 	font-size: 24px;
 }
@@ -286,6 +290,7 @@ ol {
 .header {
 	padding: 40px 45px 0;
 	padding-top: 40px;
+	margin-bottom: 24px;
 }
 
 @media (max-width: 576px) {
@@ -834,9 +839,9 @@ v .slicknav_item a {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(43%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.49)));
-	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 43%, rgba(0, 0, 0, 0.49) 100%);
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 43%, rgba(0, 0, 0, 0.49) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(160, 80, 80, 0)), color-stop(43%, rgba(160, 80, 80, 0)), to(rgba(160, 80, 80, 0.49)));
+	background: -o-linear-gradient(top, rgba(160, 80, 80, 0) 0%, rgba(160, 80, 80, 0) 43%, rgba(130, 50, 50, 0.49) 100%);
+	background: linear-gradient(to bottom, rgba(160, 80, 80, 0) 0%, rgba(160, 80, 80, 0) 43%, rgba(130, 50, 50, 0.49) 100%);
 }
 
 @media (max-width: 576px),
@@ -871,6 +876,14 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 /*-------------------
    Blog Single Page
  --------------------*/
+
+h2 a{
+	color: #f79f9f;;
+}
+h2 a:hover{
+	text-decoration: underline;
+	color: #f79f9f;
+}
 
 .blog__slider {
 	padding: 70px 0 60px;
@@ -972,15 +985,30 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	display: none;
 }
 
+
 .blog__article blockquote {
 	max-width: 1170px;
-	margin: 50px auto;
+	margin: 25px auto;
 	padding: 45px 45px 55px;
 	background-color: #EAEFE5;
-	background-image: url("../img/blog-single/quote.png");
-	background-repeat: no-repeat;
-	background-position: right 60px bottom -10px;
+	border-radius: 5px;
+	text-align: center;
+	position: relative;
 }
+.blog__article blockquote::after{
+	content: "";
+	padding: 64.5px 64.5px;
+	background-image: url("../img/question.png");
+	background-repeat: no-repeat;
+	/* background-position: center; */
+	position: absolute;
+	opacity: .2;	
+	top:50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+
 
 .blog__article blockquote p {
 	color: #222222;
@@ -1004,10 +1032,22 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 .blog__banner {
 	max-width: 1170px;
 	margin: 0 auto;
+	margin-bottom: 24px;
+	max-height: 300px;
+	overflow: hidden;
 }
 
 .blog__banner img {
 	min-width: 100%;
+	position: relative;
+	bottom: 120px;
+}
+
+@media (max-width: 576px) {
+	
+	.blog__banner img {
+		bottom: 0px;
+	}
 }
 
 .post__footer {
