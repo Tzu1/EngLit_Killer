@@ -543,6 +543,10 @@ v .slicknav_item a {
 	}
 }
 
+.text-item h2:hover{
+	font-size: 38px;
+	color: #f79f9f;
+}
 
 .slide-item {
 	position: relative;
@@ -877,8 +881,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
    Blog Single Page
  --------------------*/
 
+
+
 h2 a{
-	color: #f79f9f;;
+	color: #f79f9f;
 }
 h2 a:hover{
 	text-decoration: underline;
