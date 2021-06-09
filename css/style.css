@@ -114,6 +114,21 @@ ol {
 	margin-top: 0;
 }
 
+.back_to_top{
+	position:fixed;
+	bottom: 70px;
+	right: 50px;
+	z-index: 99;
+}
+
+.back_to_top i{ 
+	color: rgba(48, 48, 48, 0.3);
+	font-size: 50px;
+}
+.back_to_top i:hover{ 
+	color: #f79f9f;
+}
+
 /*---------------------
    Helper CSS
  -----------------------*/
