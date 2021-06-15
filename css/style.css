@@ -583,7 +583,7 @@ v .slicknav_item a {
 	top: 105%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	opacity: 15%;
+	opacity: 20%;
 	-webkit-filter: blur(20px);
 	
 }
