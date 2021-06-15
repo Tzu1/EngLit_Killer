@@ -18,6 +18,32 @@ body {
 	height: 100%;
 	font-family: "Arimo", sans-serif;
 	-webkit-font-smoothing: antialiased;
+
+}
+
+
+body::after{
+	content:"";
+	width: 80%;
+	height: 10%;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #f79f9f;
+	z-index: -99;
+	top: 105%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 15%;
+	-webkit-filter: blur(20px);
+	
+}
+
+@media (max-width: 576px){
+	body::after{
+		top: 85%;
+		width: 120%;
+		height: 20%;
+	}
 }
 
 h1,
@@ -588,11 +614,11 @@ v .slicknav_item a {
 	-webkit-transition: all 0.4s ease 0s;
 	-o-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s;
-	-webkit-filter: drop-shadow(12px 16px 7px rgba(48, 48, 48, 0.3));
+	-webkit-filter: drop-shadow(12px 16px 7px rgba(48, 48, 48, 0.25));
 
 }
 .slick-center.slide-item {
-	-webkit-filter: drop-shadow(12px 16px 7px rgba(48, 48, 48, 0.3));
+	-webkit-filter: drop-shadow(12px 16px 7px rgba(48, 48, 48, 0.25));
 
 }
 
