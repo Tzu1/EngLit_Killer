@@ -22,29 +22,7 @@ body {
 }
 
 
-body::after{
-	content:"";
-	width: 80%;
-	height: 10%;
-	border-radius: 50%;
-	position: absolute;
-	background-color: #f79f9f;
-	z-index: -99;
-	top: 105%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 15%;
-	-webkit-filter: blur(20px);
-	
-}
 
-@media (max-width: 576px){
-	body::after{
-		top: 85%;
-		width: 120%;
-		height: 20%;
-	}
-}
 
 h1,
 h2,
@@ -159,7 +137,7 @@ ol {
 	.back_to_top{
 		
 		bottom: 20px;
-		right: 10px;
+		right: 50px;
 		
 	}
 
@@ -591,6 +569,29 @@ v .slicknav_item a {
 @media (max-width: 576px) {
 	.hero__section {
 		padding-top: 30px;
+	}
+}
+
+.hero-slider::after{
+	content:"";
+	width: 80%;
+	height: 10%;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #f79f9f;
+	z-index: -99;
+	top: 105%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 15%;
+	-webkit-filter: blur(20px);
+	
+}
+
+@media (max-width: 576px){
+	.hero-slider::after{
+		width: 120%;
+		height: 20%;
 	}
 }
 
